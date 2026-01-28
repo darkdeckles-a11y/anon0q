@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>anon0q settings</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <link rel="stylesheet" href="style.css" />
+  <script type="importmap">
+  {
+    "imports": {}
+  }
+  </script>
+  <script type="module" src="settings.js" defer></script>
+</head>
+<body>
+  <div id="app">
+    <main class="main">
+      <section class="settings" data-view-section="settings">
+        <div class="settings-group">
+          <div class="settings-label">theme</div>
+          <div class="theme-row">
+            <button class="theme-chip" data-theme="default">default</button>
+            <button class="theme-chip" data-theme="crimson">crimson</button>
+            <button class="theme-chip" data-theme="dark-purple">dark purple</button>
+            <button class="theme-chip" data-theme="deep-blue">deep blue</button>
+            <button class="theme-chip" data-theme="sad-grass">sad grass</button>
+            <button class="theme-chip" data-theme="minimal">simplified</button>
+          </div>
+        </div>
+
+        <div class="settings-group">
+          <div class="settings-label">emergency</div>
+          <button id="emergencyClose" class="emergency-btn">close anon0q</button>
+        </div>
+
+        <div class="settings-group">
+          <div class="settings-label">recent</div>
+          <div id="recentList" class="settings-list settings-list--compact">
+            <div class="settings-empty">no recent yet</div>
+          </div>
+        </div>
+
+        <div class="settings-group">
+          <div class="settings-label">saved</div>
+          <div class="saved-add-row">
+            <input
+              type="text"
+              id="savedInput"
+              class="saved-input"
+              placeholder="save url"
+              autocomplete="off"
+            />
+            <button id="saveSiteButton" class="save-btn">add</button>
+          </div>
+          <div id="savedList" class="settings-list">
+            <div class="settings-empty">nothing saved</div>
+          </div>
+        </div>
+
+        <div class="settings-group">
+          <div class="settings-label">id sharing</div>
+          <div class="saved-add-row" style="margin-bottom: 6px">
+            <span style="font-size:12px;color:var(--text-soft);">your id:</span>
+            <span id="currentIdDisplay" style="font-size:12px;word-break:break-all;"></span>
+          </div>
+          <div class="saved-add-row">
+            <input
+              type="text"
+              id="importIdInput"
+              class="saved-input"
+              placeholder="enter id"
+              autocomplete="off"
+            />
+            <button id="importIdButton" class="save-btn">apply</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <nav class="circle-menu">
+      <a
+        href="index.html"
+        class="circle-btn"
+        data-view="browse"
+        aria-label="Home"
+      ></a>
+      <a
+        href="games.html"
+        class="circle-btn"
+        data-view="sessions"
+        aria-label="Games"
+      ></a>
+      <a
+        href="settings.html"
+        class="circle-btn circle-btn--active"
+        data-view="settings"
+        aria-label="Settings"
+      ></a>
+    </nav>
+  </div>
+</body>
+</html>

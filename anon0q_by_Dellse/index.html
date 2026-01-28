@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>anon0q</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <link rel="stylesheet" href="style.css" />
+  <script type="importmap">
+  {
+    "imports": {}
+  }
+  </script>
+  <script type="module" src="main.js" defer></script>
+</head>
+<body>
+  <div id="app">
+    <main class="main">
+      <section class="hero">
+        <div class="brand-inline">
+          <span class="brand-name">anon0q</span>
+          <img src="/logo.png" alt="anon0q logo" class="brand-logo" />
+        </div>
+        <div class="input-stack">
+          <input
+            type="text"
+            id="urlInput"
+            class="url-input"
+            placeholder="enter url"
+            autocomplete="off"
+          />
+          <button id="goButton" class="go-btn">go</button>
+        </div>
+      </section>
+    </main>
+
+    <nav class="circle-menu">
+      <a
+        href="index.html"
+        class="circle-btn circle-btn--active"
+        data-view="browse"
+        aria-label="Home"
+      ></a>
+      <a
+        href="games.html"
+        class="circle-btn"
+        data-view="sessions"
+        aria-label="Games"
+      ></a>
+      <a
+        href="settings.html"
+        class="circle-btn"
+        data-view="settings"
+        aria-label="Settings"
+      ></a>
+    </nav>
+  </div>
+</body>
+</html>

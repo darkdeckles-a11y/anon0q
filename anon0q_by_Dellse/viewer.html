@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>anon0q viewer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <link rel="stylesheet" href="style.css" />
+  <script type="importmap">
+  {
+    "imports": {}
+  }
+  </script>
+  <script type="module" src="viewer.js" defer></script>
+</head>
+<body>
+  <div id="viewer-root">
+    <div class="viewer-bar">
+      <button class="viewer-back" id="viewerBack">back</button>
+      <div class="viewer-url" id="viewerUrl"></div>
+    </div>
+    <iframe
+      id="viewerFrame"
+      class="viewer-frame"
+      src="about:blank"
+      sandbox="allow-same-origin allow-scripts allow-forms"
+    ></iframe>
+  </div>
+</body>
+</html>

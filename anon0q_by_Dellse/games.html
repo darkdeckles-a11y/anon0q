@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>anon0q games</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <link rel="stylesheet" href="style.css" />
+  <script type="importmap">
+  {
+    "imports": {}
+  }
+  </script>
+  <script type="module" src="main.js" defer></script>
+  <style>
+    .games-grid {
+      width: 100%;
+      max-width: 420px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .game-card {
+      padding: 10px 12px;
+      border-radius: 14px;
+      background: var(--bg-soft);
+      box-shadow: 0 0 0 1px var(--border-soft);
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      font-size: 13px;
+    }
+
+    .game-title {
+      font-size: 14px;
+    }
+
+    .game-link {
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 12px;
+      word-break: break-all;
+    }
+
+    .game-note {
+      font-size: 11px;
+      color: var(--text-soft);
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <main class="main">
+      <section class="games">
+        <div class="games-grid">
+          <div class="game-card">
+            <div class="game-title">2048</div>
+            <a
+              class="game-link"
+              href="https://play2048.co"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              https://play2048.co
+            </a>
+            <div class="game-note">simple number puzzle, loads fast</div>
+          </div>
+
+          <div class="game-card">
+            <div class="game-title">slither.io</div>
+            <a
+              class="game-link"
+              href="https://slither.io"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              https://slither.io
+            </a>
+            <div class="game-note">online snake-style game</div>
+          </div>
+
+          <div class="game-card">
+            <div class="game-title">diep.io</div>
+            <a
+              class="game-link"
+              href="https://diep.io"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              https://diep.io
+            </a>
+            <div class="game-note">tank battle game with multiple modes</div>
+          </div>
+
+          <div class="game-card">
+            <div class="game-title">krunker</div>
+            <a
+              class="game-link"
+              href="https://krunker.io"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              https://krunker.io
+            </a>
+            <div class="game-note">fast-paced browser FPS</div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <nav class="circle-menu">
+      <a
+        href="index.html"
+        class="circle-btn"
+        data-view="browse"
+        aria-label="Home"
+      ></a>
+      <a
+        href="games.html"
+        class="circle-btn circle-btn--active"
+        data-view="sessions"
+        aria-label="Games"
+      ></a>
+      <a
+        href="settings.html"
+        class="circle-btn"
+        data-view="settings"
+        aria-label="Settings"
+      ></a>
+    </nav>
+  </div>
+</body>
+</html>
