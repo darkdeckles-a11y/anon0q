@@ -1,4 +1,4 @@
 # anon0q
-<p>I really like using Markdown.</p>
+<p>this is a cool web proxy</p>
 
-<p>I think I'll use it to format all of my documents from now on.</p>
+<p>i only made this so i can make a vercel site</p>
